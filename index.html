@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <title>Chat-app-css-illustration</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+    <div class="bg-gradient-2"></div>
+    <main>
+      <section class="chat-app">
+        <div class="chat-app__phone">
+          <div class="chat-app__header">
+            <div class="chat-app__notch"></div>
+            <div class="chat-app__topbar">
+              <button class="chat-app__back" aria-label="Back">
+                <svg
+                  class="chat-app__back-icon"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 15L6 9L12 3"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <img
+                src="assets/images/avatar.jpg"
+                alt="Samuel Green"
+                class="chat-app__avatar"
+              />
+              <div class="chat-app__user">
+                <span class="chat-app__username">Samuel Green</span>
+                <span class="chat-app__status">Available to walk</span>
+              </div>
+              <button class="chat-app__menu" aria-label="Menu">
+                <span class="chat-app__menu-icon">
+                  <span class="chat-app__menu-dot"></span>
+                  <span class="chat-app__menu-dot"></span>
+                  <span class="chat-app__menu-dot"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="chat-app__messages">
+            <div class="chat-app__bubble chat-app__bubble--left">
+              That sounds great. I’d be happy to discuss more.
+            </div>
+            <div class="chat-app__bubble chat-app__bubble--left">
+              Could you send over some pictures of your dog, please?
+            </div>
+            <div class="chat-app__images">
+              <img src="assets/images/dog-image-1.jpg" alt="Dog 1" />
+              <img src="assets/images/dog-image-2.jpg" alt="Dog 2" />
+              <img src="assets/images/dog-image-3.jpg" alt="Dog 3" />
+            </div>
+            <div class="chat-app__bubble chat-app__bubble--right">
+              Here are a few pictures. She’s a happy girl!
+            </div>
+            <div class="chat-app__bubble chat-app__bubble--right">
+              Can you make it?
+            </div>
+            <div class="chat-app__bubble chat-app__bubble--left">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </div>
+            <div class="chat-app__options">
+              <label class="chat-app__option">
+                <input type="radio" name="walk" checked />
+                <span>30 minute walk</span>
+                <span class="chat-app__price">$29</span>
+              </label>
+              <label class="chat-app__option">
+                <input type="radio" name="walk" />
+                <span>1 hour walk</span>
+                <span class="chat-app__price">$49</span>
+              </label>
+            </div>
+          </div>
+          <form class="chat-app__input">
+            <input type="text" placeholder="Type a message…" disabled />
+            <button type="submit" aria-label="Send"></button>
+          </form>
+        </div>
+      </section>
+      <section class="booking-info">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
